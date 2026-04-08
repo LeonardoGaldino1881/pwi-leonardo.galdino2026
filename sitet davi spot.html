@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	}
+
+/* Style the header */
+header 
+	{
+  background-color: #0ce760;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 252, 252);
+	}
+
+/* Create two columns/boxes that floats next to each other */
+nav 
+	{
+  float: left;
+  width: 50%;
+  height: 100%; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+	}
+
+/* Style the list inside the menu */
+nav ul 
+	{
+  list-style-type: none;
+  padding: 0;
+	}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Efeito da musica na vida</h2>
+<p> A música exerce uma influência profunda e multifaceteda na vida humana, impactandoo cérebro,as emoções,o corpo e a sociedade. seus efeitos vão desde a molhoria do bem-estar mental até o estímulo cognitivo e físico. </p>
+<p> Os principais aplicativos para ouvir música atualmente no Brasil são Spotify, YouTube Music, Deezer, Amazon Music e Apple Music. Eles dominam o mercado com serviços de streaming que oferecem vastos catálogos, planos premium e versões gratuitas (como Spotify e Deezer), além de recursos personalizados</p>
+<p> OS PINCIPAIS APPS UTILIZADOS <br>
+    1.Spotify
+    <br>
+    2.YouTube Music
+    <br>
+    3.Amazon Music
+    <br>
+</p>
+<header>
+  <h2>Spotify</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://open.spotify.com/intl-pt/track/7yNf9YjeO5JXUE3JEBgnYc?si=32e15e54a16749e9">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
